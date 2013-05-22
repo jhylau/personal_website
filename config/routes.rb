@@ -1,4 +1,10 @@
 Personalblog::Application.routes.draw do
+  match '/home' => 'homes#home'
+  match '/' => 'homes#home'
+  match '/projects' => 'homes#projects'
+  match '/contact' => 'homes#contact'
+  match '/blog' => 'homes#blog'
+  match '/success' => 'homes#success'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

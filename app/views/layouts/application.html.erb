@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Personalblog</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>The Web Journey</title>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css" />
+<link href="blogstyle.css" rel="stylesheet" type="text/css" media="screen" />
+<title>Personalblog</title>
+<%= stylesheet_link_tag    "application", :media => "all" %>
+<%= javascript_include_tag "application" %>
+<%= csrf_meta_tags %>
 </head>
+<div id="header-wrapper">
+  <div id="header" class="container">
+    <div id="logo">
+      <h1><a href="#">The Web Journey</a></h1>
+      <p>Jonathan Lau</a></p>
+    </div>
+    <div id="menu">
+      <ul>
+        <li><a href="home.html">home</a></li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 <body>
 
 <%= yield %>
