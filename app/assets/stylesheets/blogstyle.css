@@ -30,6 +30,8 @@
     font-size: 16px;
 }
 
+/*header */
+
 /*image*/
 
 .image {
@@ -103,20 +105,23 @@ a:hover {
 
 /* Header */
 
-#header-wrapper {
+
+
+.header-wrapper {
 	overflow: hidden;
 	height: 200px;
 	background: url(images/img02.jpg) repeat-x left top;
 
 }
 
-#header {
+.header {
 	width: 960px;
 	height: 200px;
 	margin: 0 auto;
 	padding: 0px 20px;
 	background: url(images/img02.jpg) no-repeat left top;
 }
+
 
 /* Banner */
 
@@ -134,7 +139,7 @@ a:hover {
 
 /* Logo */
 
-#logo {
+.logo {
 	float: left;
 	width: 300px;
 	margin: 0;
@@ -142,28 +147,25 @@ a:hover {
 	color: #000000;
 }
 
-#logo h1, #logo p {
-}
-
-#logo h1 {
+.logo h1 {
 	padding: 60px 0px 0px 0px;
 	letter-spacing: -2px;
 	text-transform: lowercase;
-	font-size: 3.7em;
+	font-size: 2.8em;
 }
 
-#logo p {
+.logo p {
 	margin-top: -10px;
 	padding: 0px 0px 0px 5px;
 	font-size: 22px;
 	color: #FFFFFF;
 } 
 
-#logo p a {
+.logo p a {
 	color: #FFFFFF;
 }
 
-#logo a {
+.logo a {
 	border: none;
 	background: none;
 	text-decoration: none;
