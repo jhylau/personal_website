@@ -1,0 +1,19 @@
+<div class="wrapper">
+ <div class="container">
+        <div id="splash" class="container"><span>Welcome to my blog!</span><br></div>
+    <div class="blog">
+
+      <br>
+      <table cellspacing="20">
+      <% @blogs.each do |blog| %>
+        <tr>
+          <td><%= blog.title %></td>
+          <td><%= link_to 'Read', blog %></td>
+  <!--         <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+          <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+        </tr>
+      <% end %>
+      </table>
+    </div>
+  </div>
+</div>

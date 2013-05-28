@@ -52,8 +52,6 @@ border:solid;
 body {
 	margin: 0;
 	padding: 0;
-	background: url('img02.jpg');
-	background-repeat: repeat-x;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 16px;
 	color: #8A8985;
@@ -93,7 +91,7 @@ a {
 a:hover {
 }
 
-#wrapper {
+.wrapper {
 	overflow: hidden;
 	background-color: #FFFFFF;
 }
@@ -110,8 +108,8 @@ a:hover {
 .header-wrapper {
 	overflow: hidden;
 	height: 200px;
-	background: url(images/img02.jpg) repeat-x left top;
-
+	background: url('img02.jpg');
+	background-repeat: repeat-x;
 }
 
 .header {

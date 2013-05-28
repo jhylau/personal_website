@@ -12,6 +12,8 @@
 <%= javascript_include_tag "application" %>
 <%= csrf_meta_tags %>
 </head>
+
+<body>
 <div class="header-wrapper">
   <div class="header" class="container">
     <div class="logo">
@@ -21,15 +23,13 @@
     <div id="menu">
       <ul>
         <li><a href="home.html">home</a></li>
-        <li><a href="blog.html">blog</a></li>
+        <li><a href="blogs.html">blog</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
 </div>
-<body>
-
 <%= yield %>
 
 </body>
