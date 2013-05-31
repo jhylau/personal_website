@@ -14,23 +14,23 @@
 </head>
 
 <body>
-<div class="header-wrapper">
-  <div class="header" class="container">
-    <div class="logo">
-      <h1><a href="home.html">The Web Journey</a></h1>
-      <p>Jonathan Lau</a></p>
-    </div>
-    <div id="menu">
-      <ul>
-        <li><a href="home.html">home</a></li>
-        <li><a href="blogs.html">blog</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <div class="header-wrapper">
+    <div class="header" class="container">
+      <div class="logo">
+        <h1><%= link_to 'the web journey', home_path %></h1>
+        <p>Jonathan Lau</a></p>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><%= link_to 'home', home_path %></li>
+          <li><%= link_to 'blog', blogs_path %></li>
+          <li><%= link_to 'projects', projects_path %></li>
+          <li><%= link_to 'contact', contact_path %></li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>

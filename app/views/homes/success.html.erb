@@ -45,55 +45,20 @@
 			<div style="clear: both;">&nbsp;</div>
 		</div>
 		<!-- end #content -->
-		<div id="sidebar">
-			<div>
-				<h2>blog posts</h2>
-				<ul class="list-style1">
-					<li><a href="learning.html">How I got started</a></li>
-					<li><a href="tips.html">Beginner's Tips for Web Design and Development</a></li>
-				</ul>
-			</div>
-		</div>
+		<%= render 'sidebar' %>
 		<!-- end #sidebar -->
 		<div style="clear: both;">&nbsp;</div>
 	</div>
 	<!-- end #page --> 
 	<script>
 	(function() {
- 
-    // Create input element for testing
-    var input = document.createElement('input');
-     
-    // Create the supports object
-    var supports = {};
-     
-    supports.autofocus   = 'autofocus' in input;
-    supports.required    = 'required' in input;
-    supports.placeholder = 'placeholder' in input;
- 
-    // Fallback for autofocus attribute
-    if(!supports.autofocus) {
-         
-    }
-     
-    // Fallback for required attribute
-    if(!supports.required) {
-         
-    }
- 
-    // Fallback for placeholder attribute
-    if(!supports.placeholder) {
-         
-    }
-     
-    // Change text inside send button on submit
-    var send = document.getElementById('contact-submit');
-    if(send) {
-        send.onclick = function () {
-            this.innerHTML = '...Sending';
-        }
-    }
- 
-	})();
+                // Change text inside send button on submit
+                var send = document.getElementById('contact-submit');
+                if(send) {
+                    send.onclick = function () {
+                        this.innerHTML = '...Sending';
+                    }
+                }
+            })();
 	</script>
 </div>
